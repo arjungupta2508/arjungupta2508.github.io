@@ -13,11 +13,10 @@
     </div>
 
     <figure class="field">
-      <canvas id="curve" role="img" aria-label="A synthetic brightness curve plotted over time"></canvas>
-      <canvas id="gasf" role="img" aria-label="The Gramian angular field image computed from that brightness curve"></canvas>
+      <canvas id="nn" role="img" aria-label="A small neural network classifying a point into one of three classes"></canvas>
       <figcaption>
-        <span>The curve above becomes the image below.</span>
-        <button class="link-btn" id="resample" type="button">Try another curve</button>
+        <span>A small network, trained in your browser. Click the square to pick a point.</span>
+        <button class="link-btn" id="nn-next" type="button">Classify a new point</button>
       </figcaption>
     </figure>
   </div>

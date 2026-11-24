@@ -7,9 +7,9 @@
   --line: #E0E0EA;
   --accent: #4A3FD6;
   --accent-text: #FFFFFF;
-  --cm0: #161047;
-  --cm1: #5B4FE0;
-  --cm2: #E9E7FF;
+  --c0: #4A3FD6;
+  --c1: #0E8F80;
+  --c2: #D9811A;
 
   --sans: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -27,9 +27,9 @@
   --line: #272738;
   --accent: #9D95FF;
   --accent-text: #0D0D14;
-  --cm0: #1E1766;
-  --cm1: #6F63F5;
-  --cm2: #ECEAFF;
+  --c0: #9D95FF;
+  --c1: #3CCFB9;
+  --c2: #F2B04C;
   color-scheme: dark;
 }
 
@@ -42,9 +42,9 @@
     --line: #272738;
     --accent: #9D95FF;
     --accent-text: #0D0D14;
-    --cm0: #1E1766;
-    --cm1: #6F63F5;
-    --cm2: #ECEAFF;
+    --c0: #9D95FF;
+    --c1: #3CCFB9;
+    --c2: #F2B04C;
     color-scheme: dark;
   }
 }
@@ -127,9 +127,9 @@ a:hover { text-decoration-thickness: 2px; }
 .hero { padding-block: clamp(40px, 8vw, 104px) clamp(48px, 8vw, 96px); }
 .hero .wrap { display: grid; gap: 48px; align-items: center; }
 .hero h1 {
-  font-size: clamp(2.2rem, 4.6vw, 3.6rem);
+  font-size: clamp(2.2rem, 4.6vw, 3.5rem);
   line-height: 1.08; letter-spacing: -.028em; font-weight: 600;
-  max-width: 20ch; margin-bottom: 24px;
+  max-width: 18ch; margin-bottom: 24px;
 }
 .hero .lead { font-size: 1.15rem; color: var(--muted); max-width: 52ch; }
 
@@ -138,16 +138,14 @@ a:hover { text-decoration-thickness: 2px; }
   background: var(--surface); border: 1px solid var(--line);
   border-radius: var(--radius-lg);
 }
-.field canvas { display: block; width: 100%; }
-#curve { height: 88px; margin-bottom: 12px; }
-#gasf { aspect-ratio: 1 / 1; border-radius: 8px; }
+#nn { display: block; width: 100%; aspect-ratio: 10 / 7; }
 .field figcaption {
-  display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap;
-  margin-top: 14px; font-size: .88rem; color: var(--muted);
+  display: flex; justify-content: space-between; align-items: baseline; gap: 6px 16px; flex-wrap: wrap;
+  margin-top: 12px; font-size: .88rem; color: var(--muted);
 }
 
 @media (min-width: 900px) {
-  .hero .wrap { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 64px; }
+  .hero .wrap { grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 64px; }
 }
 
 /* ---------- Sections ---------- */
