@@ -1,0 +1,14 @@
+- name: Suraksha Kavach
+  summary: A machine learning system that detects scam SMS messages.
+  tags: [Machine learning, Text classification]
+  url: ""
+
+- name: Maze Solver
+  summary: Depth-first and breadth-first search in Python, with path reconstruction and visualizations of how each algorithm explores the maze.
+  tags: [Python, DFS, BFS, Visualization]
+  url: ""
+
+- name: Word2Vec from scratch
+  summary: A Skip-Gram model written with NumPy only. It trains 8-dimensional embeddings with negative sampling and compares words by cosine similarity.
+  tags: [NumPy, NLP, Embeddings]
+  url: ""

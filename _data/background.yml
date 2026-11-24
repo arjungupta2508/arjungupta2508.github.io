@@ -1,0 +1,10 @@
+- label: Education
+  items:
+    - title: Sharda University
+      detail: School of Computing Science & Engineering, Greater Noida. CGPA 9.5.
+      note: Coursework includes Machine Learning, Data Structures, and Probability and Statistics.
+
+- label: Experience
+  items:
+    - title: Machine Learning Intern, Scanrly Technologies LLP
+      detail: Worked on a four-module AI suite for digital marketing.

@@ -1,0 +1,19 @@
+- title: "From Light Curves to Images: A Deep Learning Framework for Astronomical Object Classification Using Gramian Angular Fields"
+  venue: "2nd International Conference on Multidisciplinary Perspectives in Advanced Computing and Technology (IMPACT 2027)"
+  status: Accepted
+  role: Lead author
+  featured: true
+  summary: "Photometric time series from SDSS Stripe 82 are encoded as Gramian Angular Field images, then classified with convolutional neural networks."
+  metrics:
+    - label: Accuracy
+      value: "94.10%"
+    - label: Macro-F1
+      value: "88.82%"
+  details: "Runs were repeated across multiple seeds for consistency, and performance on the minority QSO class is evaluated separately."
+  # Add links when you have them, for example:
+  # links:
+  #   - label: Paper
+  #     url: "https://..."
+  #   - label: Code
+  #     url: "https://github.com/..."
+  links: []

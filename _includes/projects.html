@@ -1,0 +1,20 @@
+<section class="block" id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <ul class="rows">
+      {% for p in site.data.projects %}
+      <li class="row">
+        <h3>
+          {% if p.url and p.url != "" %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}
+        </h3>
+        <p>{{ p.summary }}</p>
+        {% if p.tags %}
+        <ul class="tags">
+          {% for t in p.tags %}<li>{{ t }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

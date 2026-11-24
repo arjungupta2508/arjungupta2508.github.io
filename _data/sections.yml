@@ -1,0 +1,11 @@
+- id: hero
+- id: publication
+  label: Research
+- id: projects
+  label: Projects
+- id: background
+  label: Background
+- id: achievements
+  label: Recognition
+- id: contact
+  label: Contact

@@ -1,0 +1,14 @@
+<section class="block" id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <div>
+      <p class="contact-line">
+        <a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a>
+      </p>
+      <p class="muted">Open to research internships and collaborations in machine learning.</p>
+      {% if site.data.profile.github and site.data.profile.github != "YOUR-USERNAME" %}
+      <p><a href="https://github.com/{{ site.data.profile.github }}">github.com/{{ site.data.profile.github }}</a></p>
+      {% endif %}
+    </div>
+  </div>
+</section>

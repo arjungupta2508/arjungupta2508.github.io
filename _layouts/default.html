@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  {% include nav.html %}
+  <main id="main">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/gaf.js' | relative_url }}"></script>
+</body>
+</html>

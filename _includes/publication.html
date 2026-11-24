@@ -1,0 +1,32 @@
+{% assign pub = site.data.publications | where: "featured", true | first %}
+{% if pub %}
+<section class="block" id="publication">
+  <div class="wrap">
+    <h2>Research</h2>
+    <article class="pub">
+      <p class="pub-status"><span class="status">{{ pub.status }}</span> <span class="muted">{{ pub.role }}</span></p>
+      <h3>{{ pub.title }}</h3>
+      <p class="muted">{{ pub.venue }}</p>
+      <p>{{ pub.summary }}</p>
+
+      {% if pub.metrics %}
+      <dl class="metrics">
+        {% for m in pub.metrics %}
+          <div><dt>{{ m.label }}</dt><dd>{{ m.value }}</dd></div>
+        {% endfor %}
+      </dl>
+      {% endif %}
+
+      {% if pub.details %}<p class="muted small">{{ pub.details }}</p>{% endif %}
+
+      {% if pub.links and pub.links.size > 0 %}
+      <div class="actions">
+        {% for l in pub.links %}
+          <a class="btn btn-secondary" href="{{ l.url }}">{{ l.label }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </article>
+  </div>
+</section>
+{% endif %}

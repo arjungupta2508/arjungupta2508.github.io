@@ -1,0 +1,24 @@
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1>{{ site.data.profile.headline }}</h1>
+      <p class="lead">{{ site.data.profile.summary }}</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#publication">Read the research</a>
+        <a class="btn btn-secondary" href="mailto:{{ site.data.profile.email }}">Email me</a>
+        {% if site.data.profile.github and site.data.profile.github != "YOUR-USERNAME" %}
+          <a class="btn btn-secondary" href="https://github.com/{{ site.data.profile.github }}">GitHub</a>
+        {% endif %}
+      </div>
+    </div>
+
+    <figure class="field">
+      <canvas id="curve" role="img" aria-label="A synthetic brightness curve plotted over time"></canvas>
+      <canvas id="gasf" role="img" aria-label="The Gramian angular field image computed from that brightness curve"></canvas>
+      <figcaption>
+        <span>The curve above becomes the image below.</span>
+        <button class="link-btn" id="resample" type="button">Try another curve</button>
+      </figcaption>
+    </figure>
+  </div>
+</section>

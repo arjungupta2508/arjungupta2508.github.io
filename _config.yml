@@ -1,0 +1,20 @@
+title: Arjun Gupta
+description: Machine learning for astronomy. Research and projects by Arjun Gupta.
+lang: en
+
+# User site (repo named USERNAME.github.io): keep baseurl empty.
+# Project site (any other repo name): set baseurl to "/repo-name".
+url: "https://arjungupta2508.github.io"
+baseurl: ""
+
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
